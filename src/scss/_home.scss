@@ -1,0 +1,158 @@
+section.Home {
+  display: flex;
+  height: 100vh;
+
+  .content {
+    padding: 48px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .left-section {
+    width: 65%;
+    background-color: $light-pink;
+    height: 100hv;
+  }
+  .right-section {
+    width: 35%;
+    background-color: $dark-blue;
+    height: 100hv;
+    position: relative;
+  }
+
+  .timer-block {
+    position: relative;
+    .circle-block {
+      border: 2px solid $dark-blue;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      display: inline-block;
+      margin-right: 16px;
+    }
+    .timer-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: $dark-blue;
+      display: flex;
+      .text-group {
+        .processor-area {
+          display: flex;
+          .timer-processor {
+            background: $dark-blue;
+            margin-top: 8px;
+            @include circle-block(12px);
+            border: 1px solid $dark-blue;
+            margin-right: 8px;
+          }
+          .active {
+            background: conic-gradient(red 0deg 120deg, white 120deg 360deg);
+            border: 1.5px solid $dark-pink;
+          }
+        }
+      }
+    }
+    .timer-main {
+      font-size: 176px;
+      font-weight: bold;
+      color: $dark-pink;
+    }
+  }
+
+  ul.todo-list {
+    list-style: none;
+    padding: 8px;
+    width: 445px;
+    li {
+      display: flex;
+      height: 32px;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      span.list-circle {
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid $dark-blue;
+        border-radius: 50%;
+        margin-right: 8px;
+      }
+      span.list-text {
+        flex-grow: 1;
+        font-size: 16px;
+        font-weight: bold;
+        color: $dark-blue;
+      }
+      span.list-icon {
+        font-size: 0;
+        i {
+          font-size: 26px;
+          color: $dark-blue;
+        }
+      }
+    }
+    .list-more {
+      padding: 8px 0;
+      text-align: right;
+      font-size: 16px;
+      font-weight: bold;
+      color: $dark-pink;
+    }
+  }
+
+  .controll-circle {
+    position: absolute;
+    height: 540px;
+    width: 540px;
+    border-radius: 50%;
+    border: 4px solid $dark-pink;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    @include flex-center;
+    .processor-circle {
+      @include flex-center;
+      border-radius: 50%;
+      height: 533px;
+      width: 533px;
+      background: conic-gradient(red 0deg 50deg, white 50deg 360deg);
+      transition: 0.5s;
+      .solid-circle {
+        @include flex-center;
+        height: 506px;
+        width: 506px;
+        background-color: $dark-pink;
+        border: 4px solid $dark-pink;
+        border-radius: 50%;
+        transition: 0.3s;
+        .play-area {
+          @include flex-center;
+          margin: 0;
+          width: 92px;
+          height: 92px;
+          border-radius: 50%;
+          background-color: #fff;
+          z-index: 999;
+          position: relative;
+          cursor: pointer;
+          transition: 0.3s;
+          i {
+            font-size: 64px;
+            color: $dark-pink;
+            transition: 0.3s;
+          }
+          .break-area {
+            background-color: #fff;
+            width: 14px;
+            height: 14px;
+            z-index: 999;
+            position: absolute;
+            right: -24px;
+            bottom: 0;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+  }
+}

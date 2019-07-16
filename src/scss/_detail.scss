@@ -1,0 +1,88 @@
+section.Detail {
+  background-color: $dark-blue;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  .left-section {
+    position: relative;
+    .content {
+      padding: 45px 100px;
+
+      .play-controller {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        background-color: $light-pink;
+        border-radius: 50%;
+        height: 350px;
+        width: 350px;
+        transform: translate(0, 50%);
+        .controll-circle {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          // border: 1px solid $dark-blue;
+          background-color: $dark-blue;
+          border-radius: 50%;
+          height: 112px;
+          width: 112px;
+          transform: translate(-50%, -50%);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:before {
+            content: "";
+            display: block;
+            height: 98px;
+            width: 98px;
+            border-radius: 50%;
+            // background-color: $dark-blue;
+            border: 2px solid $dark-pink;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+          }
+          .processor-circle {
+            @include flex-center();
+            @include circle-block(98px);
+            .solid-circle {
+              cursor: pointer;
+              background-color: $dark-pink;
+              height: 86px;
+              width: 86px;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .play-icon {
+                color: white;
+                i {
+                  font-size: 64px;
+                }
+              }
+            }
+          }
+        }
+        .timer-main {
+          font-size: 64px;
+          font-weight: bold;
+          color: $dark-pink;
+          margin-top: 60px;
+        }
+        .todo-title {
+          color: $dark-blue;
+          font-weight: bold;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .active {
+    color: $dark-pink !important;
+  }
+}

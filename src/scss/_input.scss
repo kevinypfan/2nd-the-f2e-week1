@@ -1,0 +1,29 @@
+.input-group {
+  position: relative;
+  display: flex;
+  label {
+    position: absolute;
+    top: 19px;
+    left: 16px;
+    color: $dark-pink;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+  }
+  input {
+    background-color: white;
+    border: 0;
+    padding: 19px 16px;
+    width: 389px;
+    color: $dark-pink;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .input-icon {
+    display: inline-block;
+    border: 0;
+    width: 56px;
+    background-color: #fff;
+    color: $dark-pink;
+  }
+}

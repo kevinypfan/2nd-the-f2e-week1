@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.block {
+  position: relative;
+  height: 540px;
+  width: 540px;
+  background-color: #f24;
+  border-radius: 50%;
+  border: 2px solid #000;
+  background: conic-gradient(red 50deg, rgba(0, 0, 0, 0.1) 50deg);
+}
+.block::after {
+  content: "";
+  height: 510px;
+  width: 510px;
+  display: block;
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

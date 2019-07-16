@@ -1,0 +1,27 @@
+.nav-bar {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 24px 64px;
+  right: 0;
+  top: 0;
+  .bottom-bar {
+    font-size: 24px;
+    color: white;
+    font-family: "Futura", sans-serif;
+    font-weight: bold;
+    transform: rotate(90deg);
+    transform-origin: top right;
+  }
+  .nav-icon {
+    padding: 24px 0;
+    i {
+      font-size: 36px;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.tabs {
+  .tab-group {
+    cursor: pointer;
+    display: flex;
+    margin-bottom: 42px;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgba(255, 255, 225, 0.2);
+    .item-icon {
+      margin-right: 8px;
+      i {
+        font-size: 36px;
+      }
+    }
+  }
+}
