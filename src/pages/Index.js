@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import Home from "./Home";
 import Detail from "./Detail";
 import NavBar from "../components/NavBar";
@@ -47,7 +48,7 @@ const Index = () => {
   };
   const renderMap = {
     Home: (
-      <div>
+      <div key="1">
         <Home
           time={time}
           timerStatus={timerStatus}
@@ -59,7 +60,7 @@ const Index = () => {
       </div>
     ),
     Detail: (
-      <div>
+      <div key="2">
         <NavBar pushStack={pushStack} navs={detailNavs} />
         <Detail
           pushStack={pushStack}
@@ -73,7 +74,15 @@ const Index = () => {
     )
   };
 
-  return stack === "Home" ? renderMap.Home : renderMap.Detail;
+  return (
+    <ReactCSSTransitionGroup
+      transitionName="fade"
+      transitionEnterTimeout={200}
+      transitionLeaveTimeout={200}
+    >
+      {stack === "Home" ? renderMap.Home : renderMap.Detail}
+    </ReactCSSTransitionGroup>
+  );
 };
 
 export default Index;
