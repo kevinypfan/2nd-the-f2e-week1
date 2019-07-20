@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f8dc44c90fb2f4938aa13fd7ef6ebeaf",
+    "revision": "a7299f239aaac1277e7f15c5cccf0a98",
     "url": "/2nd-the-f2e-week1/index.html"
   },
   {
-    "revision": "520c2c0a09cdc42dfdf5",
+    "revision": "715c5b8601eeac794ffe",
     "url": "/2nd-the-f2e-week1/static/css/main.7c5642fa.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/2nd-the-f2e-week1/static/js/2.b4a80b40.chunk.js"
   },
   {
-    "revision": "520c2c0a09cdc42dfdf5",
-    "url": "/2nd-the-f2e-week1/static/js/main.4ffe8837.chunk.js"
+    "revision": "715c5b8601eeac794ffe",
+    "url": "/2nd-the-f2e-week1/static/js/main.cac4f35a.chunk.js"
   },
   {
     "revision": "740000735ca8bc105f9e",
