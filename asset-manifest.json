@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c5642fa.chunk.css",
-    "main.js": "/static/js/main.52c7b224.chunk.js",
-    "main.js.map": "/static/js/main.52c7b224.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.b4a80b40.chunk.js": "/static/js/2.b4a80b40.chunk.js",
-    "static/js/2.b4a80b40.chunk.js.map": "/static/js/2.b4a80b40.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.3d05aa94f9aef7b63ab29b3a64434fe4.js": "/precache-manifest.3d05aa94f9aef7b63ab29b3a64434fe4.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.7c5642fa.chunk.css.map": "/static/css/main.7c5642fa.chunk.css.map"
+    "main.css": "/2nd-the-f2e-week1/static/css/main.7c5642fa.chunk.css",
+    "main.js": "/2nd-the-f2e-week1/static/js/main.4ffe8837.chunk.js",
+    "main.js.map": "/2nd-the-f2e-week1/static/js/main.4ffe8837.chunk.js.map",
+    "runtime~main.js": "/2nd-the-f2e-week1/static/js/runtime~main.d2c25952.js",
+    "runtime~main.js.map": "/2nd-the-f2e-week1/static/js/runtime~main.d2c25952.js.map",
+    "static/js/2.b4a80b40.chunk.js": "/2nd-the-f2e-week1/static/js/2.b4a80b40.chunk.js",
+    "static/js/2.b4a80b40.chunk.js.map": "/2nd-the-f2e-week1/static/js/2.b4a80b40.chunk.js.map",
+    "index.html": "/2nd-the-f2e-week1/index.html",
+    "precache-manifest.4bbf9d5423d7c2d9da4b18d278a278be.js": "/2nd-the-f2e-week1/precache-manifest.4bbf9d5423d7c2d9da4b18d278a278be.js",
+    "service-worker.js": "/2nd-the-f2e-week1/service-worker.js",
+    "static/css/main.7c5642fa.chunk.css.map": "/2nd-the-f2e-week1/static/css/main.7c5642fa.chunk.css.map"
   }
 }
