@@ -9,6 +9,18 @@ const Index = () => {
   const [timerStatus, setTimerStatus] = useState(false);
   const timeRef = useRef({});
   const [stack, setStack] = useState("Todos");
+  const [todos, setTodos] = useState([
+    { title: "the First thing to do today", completed: false },
+    { title: "the second thing to do today", completed: false },
+    { title: "the third thing to do today", completed: false },
+    { title: "the Forth thing to do today", completed: false },
+    { title: "complete the keynote", completed: false },
+    { title: "prepare presentation", completed: false },
+    { title: "mockup of the new case", completed: true, workCircle: 4 },
+    { title: "product prototype", completed: true, workCircle: 2 },
+    { title: "draw a wireframe", completed: true, workCircle: 7 },
+    { title: "website detail refine", completed: true, workCircle: 5 }
+  ]);
 
   const homeNavs = [
     { name: "Todos", icon: "list", text: "TO-DO LIST" },
@@ -46,6 +58,7 @@ const Index = () => {
   const pushStack = name => {
     setStack(name);
   };
+
   const renderMap = {
     Home: (
       <div key="1">
@@ -55,6 +68,8 @@ const Index = () => {
           backTimeStart={backTimeStart}
           backTimePause={backTimePause}
           backTimeStop={backTimeStop}
+          todos={todos}
+          pushStack={pushStack}
         />
         <NavBar pushStack={pushStack} navs={homeNavs} />
       </div>
@@ -69,6 +84,7 @@ const Index = () => {
           timerStatus={timerStatus}
           backTimeStart={backTimeStart}
           backTimePause={backTimePause}
+          todos={todos}
         />
       </div>
     )

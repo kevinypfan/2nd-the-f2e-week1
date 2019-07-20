@@ -6,9 +6,9 @@ section.Detail {
   overflow: hidden;
   .left-section {
     position: relative;
+    width: 45%;
     .content {
       padding: 45px 100px;
-
       .play-controller {
         display: flex;
         flex-direction: column;
@@ -80,6 +80,16 @@ section.Detail {
           font-size: 16px;
         }
       }
+    }
+  }
+  .right-section {
+    width: 35%;
+    .todos {
+      height: 100%;
+      padding: 45px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
     }
   }
   .active {

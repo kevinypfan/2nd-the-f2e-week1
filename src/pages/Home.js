@@ -1,7 +1,7 @@
 import React from "react";
 import InputGroup from "../components/UI/InputGroup";
 import TimerBlock from "../components/Home/TimerBlock";
-import TodoList from "../components/Home/TodoList";
+import TodoList from "../components/TodoList";
 import ControlCircle from "../components/Home/ControlCircle";
 
 const Home = props => {
@@ -11,7 +11,7 @@ const Home = props => {
         <div className="content">
           <InputGroup />
           <TimerBlock time={props.time} />
-          <TodoList />
+          <TodoList {...props} limit={3} done={true} />
         </div>
       </div>
       <div className="right-section">

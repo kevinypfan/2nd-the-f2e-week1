@@ -1,6 +1,7 @@
 .input-group {
   position: relative;
   display: flex;
+  // margin-bottom: 24px;
   label {
     position: absolute;
     top: 19px;
@@ -14,7 +15,7 @@
     background-color: white;
     border: 0;
     padding: 19px 16px;
-    width: 389px;
+    width: 100%;
     color: $dark-pink;
     font-weight: bold;
     font-size: 16px;

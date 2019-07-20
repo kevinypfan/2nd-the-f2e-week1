@@ -1,0 +1,50 @@
+ul.todo-list {
+  list-style: none;
+  padding: 8px;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 16px;
+  li {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    span.list-circle {
+      display: block;
+      width: 20px;
+      height: 20px;
+      border: 2px solid $dark-blue;
+      border-radius: 50%;
+      margin-right: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      i {
+        font-size: 14px;
+        font-weight: bold;
+      }
+    }
+    span.list-text {
+      flex-grow: 1;
+      font-size: 16px;
+      font-weight: bold;
+      color: $dark-blue;
+      text-transform: uppercase;
+    }
+    span.list-icon {
+      font-size: 0;
+      i {
+        font-size: 26px;
+        color: $dark-blue;
+      }
+    }
+  }
+  .list-more {
+    padding: 8px 0;
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    color: $dark-pink;
+  }
+}

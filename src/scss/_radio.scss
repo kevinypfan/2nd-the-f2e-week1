@@ -1,0 +1,43 @@
+form {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 16px 0;
+  .radio-group {
+    display: flex;
+    padding: 4px 16px;
+    margin: 8px 0;
+    width: 33%;
+    input {
+      display: none;
+      &:checked + span {
+        &:before {
+          content: "";
+          display: block;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: $dark-pink;
+        }
+      }
+    }
+    input + span {
+      display: inline-block;
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: 2px solid $dark-pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 16px;
+    }
+    label {
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
