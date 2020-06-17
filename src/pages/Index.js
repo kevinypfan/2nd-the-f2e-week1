@@ -8,7 +8,7 @@ const Index = () => {
   const [time, setTime] = useState(150000);
   const [timerStatus, setTimerStatus] = useState(false);
   const timeRef = useRef({});
-  const [stack, setStack] = useState("Todos");
+  const [stack, setStack] = useState("Home");
   const [todos, setTodos] = useState([
     { title: "the First thing to do today", completed: false },
     { title: "the second thing to do today", completed: false },
